@@ -50,7 +50,7 @@ img {
     width: 240px;
   }
   .navbar-brand img {
-    border: 8px solid var(--color-brand);
+    border: 3px solid var(--color-brand);
   }
   .content-wrapper {
     padding-left: 240px;
@@ -72,7 +72,7 @@ img {
 }
 
 .list-inline-item:hover {
- transform: scale(1.2)
+  transform: scale(1.2);
 }
 .btn-brand {
   background-color: var(--color-brand);
@@ -127,4 +127,3 @@ img {
   border-radius: 100%;
   background-color: var(--color-background);
 }
-
