@@ -127,3 +127,57 @@ img {
   border-radius: 100%;
   background-color: var(--color-background);
 }
+
+
+
+/* Contact form inputs and textarea text color */
+#contact input,
+#contact textarea {
+  color: #fff; /* white text */
+}
+
+/* Placeholder color remains light yellowish */
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: var(--color-body);
+}
+
+/* Optional: focus effect with yellow border */
+#contact input:focus,
+#contact textarea:focus {
+  border: 1px solid var(--color-brand);
+  outline: none;
+}
+
+
+/* Contact form inputs and textarea text color */
+#contact input,
+#contact textarea {
+  color: #fff; /* default text white */
+  background-color: var(--color-base); /* default dark background */
+  transition: background-color 0.3s ease, color 0.3s ease, placeholder-color 0.3s ease; /* smooth transition */
+}
+
+/* Placeholder color when not focused */
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: var(--color-body); /* light yellowish */
+}
+
+/* On focus or autofocus: same as Contact button color */
+#contact input:focus,
+#contact textarea:focus,
+#contact input:active,
+#contact textarea:active {
+  background-color: var(--color-brand); /* exactly same as button */
+  color: var(--color-base); /* dark text for readability */
+  border: 1px solid var(--color-brand); /* optional border to match */
+  outline: none;
+}
+
+/* Placeholder color when focused */
+#contact input:focus::placeholder,
+#contact textarea:focus::placeholder {
+  color: var(--color-base); /* dark text, visible on yellow background */
+  opacity: 0.7; /* optional, for subtle effect */
+}
